@@ -10,7 +10,7 @@ cask "battsafe" do
   depends_on macos: ">= :sonoma"
   depends_on arch: :arm64
 
-  app "BattSafe.app", no_quarantine: true
+  app "BattSafe.app"
 
   postflight do
     system_command "/bin/chmod",
@@ -37,5 +37,8 @@ cask "battsafe" do
     The helper requires root privileges to read/write SMC keys.
     You may need to grant accessibility permissions in:
       System Settings > Privacy & Security
+
+    If macOS blocks the app (Gatekeeper), reinstall with:
+      brew reinstall --cask --no-quarantine battsafe
   EOS
 end
