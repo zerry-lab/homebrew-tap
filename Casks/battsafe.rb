@@ -10,7 +10,7 @@ cask "battsafe" do
   depends_on macos: ">= :sonoma"
   depends_on arch: :arm64
 
-  app "BattSafe.app"
+  app "BattSafe.app", no_quarantine: true
 
   postflight do
     system_command "/bin/chmod",
