@@ -1,6 +1,6 @@
 cask "battsafe" do
   version "1.0.0"
-  sha256 "16d043278d834cb4f219569eb93aac2574977c99a7d292e344db835b6ab9a630"
+  sha256 "164462fad4eb0641eef47d6072099e6006702f9e94a87b5211dbd6bf4907eb36"
 
   url "https://github.com/zerry-lab/battsafe-releases/releases/download/v#{version}/BattSafe.zip"
   name "BattSafe"
