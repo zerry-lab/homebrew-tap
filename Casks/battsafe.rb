@@ -1,8 +1,8 @@
 cask "battsafe" do
-  version "1.6.0"
-  sha256 "7bf48d3adf0cd8e1221bcc1b30ed07da7612aa330e26b2edd8f6d22220724101"
+  version "1.6.1"
+  sha256 "9a2fd5932b871e0466aee4cece81571513e656354f72fa0ce3dbd55b50dea285"
 
-  url "https://github.com/zerry-lab/battsafe-releases/releases/download/v1.6.0/BattSafe.zip"
+  url "https://github.com/zerry-lab/battsafe-releases/releases/download/v1.6.1/BattSafe.zip"
   name "BattSafe"
   desc "Battery charge limit manager for Apple Silicon Macs"
   homepage "https://github.com/zerry-lab/battsafe-releases"
