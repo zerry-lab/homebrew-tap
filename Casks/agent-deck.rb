@@ -4,7 +4,7 @@ cask "agent-deck" do
 
   url "https://github.com/zerry-lab/agent-deck-releases/releases/download/v#{version}/Agent_Deck_#{version}_aarch64.zip"
   name "Agent Deck"
-  desc "Manage multiple Claude Code and Codex CLI accounts on macOS"
+  desc "Manage multiple Claude Code and Codex CLI accounts"
   homepage "https://github.com/zerry-lab/agent-deck-releases"
 
   depends_on macos: ">= :sonoma"
@@ -19,16 +19,17 @@ cask "agent-deck" do
             ]
 
   zap trash: [
-    "~/Library/LaunchAgents/com.cyj.agent-deck.rotate.plist",
     "~/.agent-deck",
+    "~/Library/LaunchAgents/com.cyj.agent-deck.rotate.plist",
   ]
 
   caveats <<~EOS
     Agent Deck is distributed without an Apple Developer ID signature, so
-    macOS Gatekeeper may block the first launch. If it does, reinstall with:
-      brew reinstall --cask --no-quarantine agent-deck
-    or remove the quarantine attribute manually:
+    macOS Gatekeeper may block the first launch. If it does, remove the
+    quarantine attribute:
       xattr -dr com.apple.quarantine "/Applications/Agent Deck.app"
+    or reinstall while bypassing quarantine:
+      HOMEBREW_CASK_OPTS=--no-quarantine brew reinstall --cask agent-deck
 
     To use the `ad` CLI from any terminal, open Agent Deck → Settings → CLI
     and click "Install CLI to PATH" (it creates a symlink at
