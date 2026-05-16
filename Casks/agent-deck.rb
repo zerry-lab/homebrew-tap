@@ -1,6 +1,6 @@
 cask "agent-deck" do
-  version "0.4.10"
-  sha256 "e32fcec6f1385842c81a68da59612f7449e20f8fed7d2aaf994702528a75c43f"
+  version "0.5.0"
+  sha256 "6918d264d5d8ce412a042bf1e445d16282a20b079fca40a06d488f0c37673cfb"
 
   url "https://github.com/zerry-lab/agent-deck-releases/releases/download/v#{version}/Agent_Deck_#{version}_aarch64.zip"
   name "Agent Deck"
@@ -39,11 +39,11 @@ cask "agent-deck" do
     and click "Install CLI to PATH" (it creates a symlink at
     /opt/homebrew/bin/ad pointing into the .app).
 
-    Agent Deck can also install per-user LaunchAgents for login startup
-    (com.cyj.agent-deck.login) and auto-rotation (com.cyj.agent-deck.rotate).
-    These are managed from Settings. Drag-to-Trash uninstall does NOT remove
-    them, so prefer `brew uninstall --cask agent-deck` for a clean removal.
-    `brew uninstall --cask --zap agent-deck` also wipes the vault at
-    ~/.agent-deck.
+    Agent Deck can also install a per-user LaunchAgent for login startup
+    (com.cyj.agent-deck.login). The cask also removes the legacy
+    com.cyj.agent-deck.rotate LaunchAgent if it exists. Drag-to-Trash
+    uninstall does NOT remove LaunchAgents, so prefer
+    `brew uninstall --cask agent-deck` for a clean removal.
+    `brew uninstall --cask --zap agent-deck` also wipes ~/.agent-deck.
   EOS
 end
