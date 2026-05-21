@@ -4,7 +4,7 @@ cask "agent-deck" do
 
   url "https://github.com/zerry-lab/agent-deck-releases/releases/download/v#{version}/Agent_Deck_#{version}_aarch64.zip"
   name "Agent Deck"
-  desc "Manage multiple Claude Code and Codex CLI accounts"
+  desc "Manage multiple Claude Code, Codex, and Antigravity CLI accounts"
   homepage "https://github.com/zerry-lab/agent-deck-releases"
 
   depends_on macos: :sonoma
