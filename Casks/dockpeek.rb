@@ -1,6 +1,6 @@
 cask "dockpeek" do
-  version "1.5.21"
-  sha256 "ed375d3feebd1b2bc33647823085bddc85fc72ca8060cd3e7aaf192007e05e2d"
+  version "1.5.22"
+  sha256 "ab48e66ed7bf6be2771ccfabbc3afb5541121bcdd10b0e28a7d25cfadb9291a4"
 
   url "https://github.com/ongjin/dockpeek/releases/download/v#{version}/DockPeek.zip"
   name "DockPeek"
