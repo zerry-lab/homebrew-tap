@@ -1,6 +1,6 @@
 cask "agent-deck" do
-  version "0.8.14"
-  sha256 "5a507df8fdb348dcf890b0382269137b487b4dbb904ecd5d6ee75398c5cc5f44"
+  version "0.8.15"
+  sha256 "66894facac9d89b71be972aa08386925130fa8ae1f48f10b8c7a0650974f0568"
 
   url "https://github.com/zerry-lab/agent-deck-releases/releases/download/v#{version}/Agent_Deck_#{version}_aarch64.zip"
   name "Agent Deck"
