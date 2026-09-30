@@ -7,8 +7,8 @@ cask "agent-deck" do
   desc "Manage multiple Claude Code, Codex, and Antigravity CLI accounts"
   homepage "https://github.com/zerry-lab/agent-deck-releases"
 
-  depends_on macos: :sonoma
   depends_on arch: :arm64
+  depends_on macos: :sonoma
 
   app "Agent Deck.app"
 
